@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conscientização sobre Má Alimentação</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Cabeçalho -->
+  <header role="banner">
+    <nav aria-label="Menu principal">
+      <ul>
+        <li><a href="#home">Início</a></li>
+        <li><a href="#problemas">Problemas</a></li>
+        <li><a href="#dicas">Dicas</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+    <button id="contrast-toggle" aria-label="Ativar modo de alto contraste">Alto Contraste</button>
+  </header>
+
+  <!-- Conteúdo principal -->
+  <main>
+    <!-- Seção Home -->
+    <section id="home" role="region" aria-labelledby="home-title">
+      <h1 id="home-title">Entenda os Riscos da Má Alimentação</h1>
+      <p>Saiba como escolhas alimentares erradas impactam sua saúde e bem-estar.</p>
+    </section>
+
+    <!-- Seção Problemas -->
+    <section id="problemas" role="region" aria-labelledby="problemas-title">
+      <h2 id="problemas-title">Principais Problemas</h2>
+      <div id="problemas-container" class="cards-container">
+        <!-- Cards serão renderizados via JS -->
+      </div>
+    </section>
+
+    <!-- Seção Dicas com Carrossel -->
+    <section id="dicas" role="region" aria-labelledby="dicas-title">
+      <h2 id="dicas-title">Dicas para uma Alimentação Saudável</h2>
+      <div id="carousel" class="carousel" aria-label="Carrossel de dicas">
+        <button class="carousel-btn prev" aria-label="Dica anterior">&#10094;</button>
+        <div class="carousel-track">
+          <!-- Slides serão renderizados via JS -->
+        </div>
+        <button class="carousel-btn next" aria-label="Próxima dica">&#10095;</button>
+      </div>
+    </section>
+
+    <!-- Seção FAQ com Acordeão -->
+    <section id="faq" role="region" aria-labelledby="faq-title">
+      <h2 id="faq-title">Perguntas Frequentes</h2>
+      <div id="faq-container">
+        <!-- Acordeão será renderizado via JS -->
+      </div>
+    </section>
+
+    <!-- Seção Contato -->
+    <section id="contato" role="region" aria-labelledby="contato-title">
+      <h2 id="contato-title">Fale Conosco</h2>
+      <form>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem" required></textarea>
+
+        <button type="submit">Enviar</button>
+      </form>
+      <div class="font-controls">
+        <button id="increase-font" aria-label="Aumentar tamanho da fonte">A+</button>
+        <button id="decrease-font" aria-label="Diminuir tamanho da fonte">A-</button>
+      </div>
+    </section>
+  </main>
+
+  <!-- Rodapé -->
+  <footer role="contentinfo">
+    <p>&copy; 2026 Conscientização sobre Má Alimentação. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
